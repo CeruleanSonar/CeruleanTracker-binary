@@ -1,0 +1,76 @@
+# Known Point Database for CeruleanMap Display
+#
+# Two formats for data entry are recognized:
+#
+# aaa.aaaaaaa,bbb.bbbbbbb,<label>
+#    	Where aaa.aaaaaaa is latitude degrees (including sign, which is negative in the US),
+#	and bbb.bbbbbbb is longitude degrees (including sign, which is negative below the equator).
+#	This is similar to DD (decimal degrees) format. <Label> is a human-readable text label for 
+#	the display (no commas, please!)
+#
+# ccc,dd.dddddd,eee,ff.ffffff,<label>
+#	Where ccc and dd.dddddd are latitude integer degrees and decimal minutes, and
+#	eee and ff.ffffff are longitude integer degrees and decimal minutes, and
+#	<label> is a human-readable text label for the display (no commas, please!)
+#	This format is similar to the DDM (degrees decimal minutes) format common on 
+# 	marine GPS displays, except we add a sign to the integer degrees instead of 
+#	following the minutes with "N", "E", "S", "W".
+#
+# It's OK to have entries that are "off the map."  
+
+0,0,Origin
+# Places in Minnetonka
+46.880704, -91.919797,McQuade Harbor
+
+44.969319,-93.516159,Depot Docks
+44.968882,-93.517267,Gas Dock
+44.967512,-93.520754,Bwana's Dock
+44,58.002,-93,30.9222,Barge Wreck Lowrance
+44.96675000,-93.51519000,Barge Wreck ROV 1
+44.96681000,-93.51537000,Barge Wreck ROV 2
+#44.96677,-93.515283,Nick's Barge
+44.969537,-93.517450,Don's Desk
+44.968338,-93.518534,BoatWorks Dock 1
+44.968463,-93.517588,BoatWorks Dock 2
+44.969375,-93.515538,City Docks
+#44.968465,-93.511956,Broadway Docks
+44.96846000,-93.51197000,BWAY1
+44.96850000,-93.51210000,BWAY2
+44.96856000,-93.51223000,BWAY3
+44.96860000,-93.51237000,BWAY4
+44.96866000,-93.51254000,BWAY5
+44.962343,-93.515935,Weed Point
+44.965735,-93.502043,Yacht Club Launch
+44.969262,-93.517416,Cerulean Berth
+
+# Places near LA
+#33.0,27.587,-117.0,43.528,W19A
+#33.0,23.135,-117.0,38.265,ACE
+33.708557, -118.251454,LA Harbor Lighthouse
+33.707869, -118.277303,Cabrillo Beach Jetty
+33.727311, -118.273586,Fish Market
+
+# Places that will show if no GPS is connected
+0.001,0.001,NE Demo Object
+-0.001,0.001,NW Demo Object
+0.001,-0.001,SE Demo Object
+-0.001,-0.001,SW Demo Object
+
+#Far north
+70.662690, 23.680671,Hammerfest
+70.666139, 23.661677,Hammerfest Breakwater
+70.664323, 23.686288,Hammerfest Pier
+
+# Valid Polygon colors: WHITE, BLUE, ORANGE, BLACK (black actually displays as light gray)
+# Closed Polygons are filled, open Polygons are line segments. A Polygon is closed if
+# the final coordinate is exactly the same as the first coordinate.
+
+# Polygons in Wayzata Bay of Lake Minnetonka, Minnesota, near Cerulean's offices
+#POLYGON,BLACK,44.962203,-93.498494,44.964658,-93.498902,44.965741,-93.503342,44.965579,-93.507451,44.968070,-93.510487,44.968961,-93.512507,44.969650,-93.515430,44.969599,-93.516838,44.969241,-93.518010,44.968935,-93.517956,44.968565,-93.520013,44.963867,-93.525372,44.969360,-93.531547,44.975848,-93.523636,44.975848,-93.494240,44.962203,-93.498494
+#POLYGON,ORANGE,44.962343,-93.515935,44.961062,-93.516761,44.959956,-93.515623,44.962114,-93.513863,44.962343,-93.515935
+#POLYGON,BLUE,44.968832,-93.518685,44.968945,-93.517913,44.969230,-93.518086,44.969616,-93.516829,44.969612,-93.516073,44.969677,-93.515434,44.969502,-93.515499,44.969316,-93.516153,44.969107,-93.516582,44.968790,-93.517566,44.968484,-93.517490,44.968323,-93.518522,44.968832,-93.518685
+
+
+
+
+
