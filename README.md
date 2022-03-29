@@ -1,4 +1,7 @@
 # CeruleanTracker-binary
+
+[Download Here](https://github.com/CeruleanSonar/CeruleanTracker-binary/archive/refs/tags/20220329.zip)
+
 CeruleanTracker.exe is a Windows executable for CeruleanTracker application.
 
 CeruleanMap.exe is a companion Windows executable for plotting ROV and AUV positions on a map.
